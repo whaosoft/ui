@@ -131,8 +131,8 @@
 	 */
 }
 
-/*.docklr .w2 * {*/
-.docklr .w2 > div {
+/*.docklr .w2 > div { */
+.docklr .w2 * {
     font-size:20px;
 }
 
