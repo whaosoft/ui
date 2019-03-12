@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Docklr.css - Pure CSS3 OSX-like Dock Menu &amp; Stacks</title>
+    <!-- somewhere in head -->
+    <link rel="stylesheet" type="text/css" href="docklr-v1.0.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    <h1 style="font-size:14px">index.html</h1>
+    <!-- somewhere in body -->
+ 
+ <div class="wdiv">
+   <div class="winner">
+
+    <ul class="docklr">
+        <li onclick="a(event)" style="height:70px; background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);" >
+
+		 <div>你好</div>
+            
+			   
+        </li>
+
+        <li onclick="a(event)" style="height:50px;background-color: coral;color:coral;" >
+   
+		 <div>我好</div>
+        </li>  
+		
+        <li onclick="a(event)" style="height:50px;background-color: coral;color:coral;">
+                 <div>333</div>
+        </li>
+
+        <li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>444</div>
+        </li>
+         
+		 <li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>555</div>
+        </li>
+         
+		<li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>666</div>
+        </li>
+         
+		<li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>777</div>
+        </li>
+         
+		<li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>888</div>
+        </li>
+         
+		<li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>111222</div>
+        </li>
+
+		<li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>111333</div>
+        </li>
+				       
+		 <li onclick="a(event)" style="height:50px;background-color: rgba(44, 52, 249, 0.53);color:rgba(44, 52, 249, 0.53);">
+                 <div>111444</div>
+        </li>
+
+    </ul>
+
+	</div>
+ </div>
+
+</body>
+
+
+<script>
+ let tmpHeight;
+	function a(event){
+	  //alert(event.target);
+
+	var x = document.getElementsByClassName("w2");
+	let tmp = x[0]
+	//console.info("---", tmp)
+	if(tmp){
+	 if(tmpHeight){
+	  tmp.style.height =tmpHeight;
+	 }
+	   tmp.classList.remove("w2");
+	}
+
+
+
+	 // event.currentTarget.setAttribute('class', "w2")
+	 let ec = event.currentTarget.classList
+	 ec.add("w2");
+	   
+	  //event.currentTarget.classList.remove("w2");
+
+	  //console.info( event.currentTarget.style.height)
+	 let vv = event.currentTarget.style.height
+     tmpHeight = vv
+	 vv = vv.substring(0,vv.length-2)
+	//console.info("~~~", vv)
+	  event.currentTarget.style.height = vv * 1.2 +"px";
+
+	//从他爸爸背景色来
+	 // console.info(  event.currentTarget.style)
+	// event.currentTarget.style.borderLeftColor = "#da1717";
+
+	}
+
+
+</script>
+
+</html>
