@@ -132,9 +132,14 @@
 	 */
 }
 
-/*.docklr .w2 > div { */
+/*.docklr .w2 > div {*/
+/*
 .docklr .w2 * {
-    font-size:20px;
+  font-size:20px;
+}
+*/
+.docklr .w2 > div {
+  zoom:1.5
 }
 
 .docklr .w2:after  {
