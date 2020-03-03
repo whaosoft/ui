@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>测试按钮</title>
+	<style>
+	  .button {
+	    width: 100px;
+	    background-color: #4984FF;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		padding: 10px 0;
+		text-align: center;
+		transition: width 1s ease
+	  }
+	  ul { 
+	    padding: 0;
+	    list-style: none;
+	  }
+	</style>
+  </head>
+  <body>
+    <button id="btn" class="button" onclick="showHistory()">历史记录</button>
+  <script>
+    let show = true;
+    function showHistory() {
+	  let buttonText = '历史记录'
+	  let showText = '<ul><li>记录1: ****</li><li>记录2: ****</li><li>记录3: ****</li></ul>';
+	  document.querySelector("#btn").innerHTML = show ? showText : buttonText;
+	  document.querySelector("#btn").style.width = show ? '200px' : '100px';
+	  show = !show;
+	}
+  </script>
+  </body>
+</html>
