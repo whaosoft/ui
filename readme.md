@@ -9,5 +9,4 @@
 
 其实了 提交了代码也不显示了呢? 是不是因为不是public项目的问题 / 或是直接上网站上改的
 
-zlm arm上传
-https://hub.docker.com/r/sudemqaq/ubuntu-arm-zlmediakit
+
